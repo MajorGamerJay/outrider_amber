@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) }});
 
 // Declaring variables:
-const infomessage = `hey there! I am outrider Amber from Genshin Impact BD! I will be your guide from now on. If you need any help, just type \`bb' help\`. If you're thinking about what \`bb\` means, it means my favorite little barron bunny! :D\nFor more information regarding the server, please click this link!`;
+const infomessage = `hey there! I am outrider Amber from Genshin Impact BD! I will be your guide from now on. If you need any help, just type \`bb' help\`. If you're thinking about what \`bb\` means, it means my favorite little barron bunny! :D\nFor more information regarding the server, please click this link!\nhttps://discord.com/channels/779927817306505246/780003685035409430/780499501944274944`;
 
 const bb_info = `bb' info`;
 const bb_gibd = `bb' gibd`;
