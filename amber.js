@@ -16,18 +16,15 @@ const bb_help = `bb' help`;
 const help_embed = new MessageEmbed()
 .setTitle('Hi! I am Amber and welcome to Genshin Impact BD!')
 .setThumbnail('https://static.wikia.nocookie.net/a04f4012-6f9f-40be-a662-2b9af26ed22e')
-.setDescription('It seems you have invoked the help command traveller! Just tell me what you need.\n A date? No, I\'m sorry I can\'t do that :frowning:\n But, I can show you all my help commands! :grin:')
+.setDescription('*It seems you have invoked the help command traveller! Just tell me what you need.*\n\n* A date? No, I\'m sorry I can\'t do that :frowning:*\n\n* But, I can show you all my help commands! :grin:*')
 .addFields(
     { name: 'bb\' help', value: 'This command!' },
-    { name: '\u200B', value: '\u200B' },
     { name: 'bb\' info', value: 'Basic information about the bot' },
-    { name: '\u200B', value: '\u200B' },
     { name: 'bb\' gibd', value: 'Shows information about Genshin Impact BD!' },
 )
 .setColor(0xff0000)
 .setTimestamp()
 .setFooter('This bot is made by anti-nunur pani gang!')
-.setURL('https://google.com');
 
 const welcome_embed = new MessageEmbed()
 .setTitle('Welcome!');
@@ -60,4 +57,4 @@ client.on('message', msg => {
     }
 });
 
-client.login('token');
+client.login('');
