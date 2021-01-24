@@ -32,7 +32,7 @@ function make_embed(member_obj) {
     return new Discord.MessageEmbed()
     .setTitle('Welcome to Genshin Impact BD!')
     .setThumbnail(member_obj.user.displayAvatarURL())
-    .setDescription(`*Welcome to Genshin Impact BD @${member_obj.user.tag}!\n\nI am your guide the Outrider Amber! To invoke any help commands, please type \`bb' help\` in any of the bots channel!`)
+    .setDescription(`Welcome to Genshin Impact BD @${member_obj.user.tag}!\n\nI am your guide the Outrider Amber! To invoke any help commands, please type \`bb' help\` in any of the bots channel!`)
     .setFooter(`Account created at ${member_obj.user.createdAt.toLocaleDateString("en-US")} ${member_obj.user.createdAt.toLocaleTimeString("en-US")}`)
     .setColor(0xff0000)
     .setTimestamp();
@@ -65,8 +65,9 @@ client.on('message', msg => {
 
 client.on('guildMemberAdd', member => {
     const channel = member.guild.systemChannel;
+    channel.send(`Welcome to the server, traveler ${member}!`);
     channel.send(make_embed(member));
     console.log(`Guild member joined, ${member.user.tag}`);
 });
 
-client.login('');
+client.login(process.env.BOT_TOKEN);
