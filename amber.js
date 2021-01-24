@@ -69,4 +69,4 @@ client.on('guildMemberAdd', member => {
     console.log(`Guild member joined, ${member.user.tag}`);
 });
 
-client.login('ODAyNTg0NDQ4MTgzOTU5NTUy.YAxXAw.h27Ls7qkZcEmP2MpsB5Xoofz00U');
+client.login('');
