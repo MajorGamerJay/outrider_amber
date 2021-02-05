@@ -1,5 +1,3 @@
-// This program is created by MajorGamerJay <majorgamerjay@gmail.com> under the MIT License
-
 // Declarations for classes
 const Discord = require('discord.js');
 const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) }});
